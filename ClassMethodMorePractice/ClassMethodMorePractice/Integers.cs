@@ -10,8 +10,9 @@ namespace ClassMethodMorePractice
     {
         public void twoInt(int numberOne, int numberTwo)
         {
-            numberOne * 2;
+            int numberValue = numberOne * 2;
             Console.WriteLine(numberTwo);
+            Console.ReadLine();
 
         }
     }

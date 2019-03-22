@@ -12,9 +12,7 @@ namespace ClassMethodMorePractice
         {
             Integers example = new Integers();
 
-            example.twoInt(5, 10);
-
-            example.twoInt(numberOne = 5, numberTwo = 10);
+            example.twoInt(numberOne: 5, numberTwo: 10);
         }
     }
 }
