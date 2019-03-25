@@ -13,14 +13,23 @@ namespace MethodOptionalParamenter
             Console.WriteLine("Please choose a number:");
             int firstNumber = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please choose another number (This number is optional).");
-            int secondNumber = Convert.ToInt32(Console.ReadLine());
-
+            string secondNumberInput = Console.ReadLine();
 
             Math example = new Math();
 
-            int resultMath = example.Opperation(firstNumber, secondNumber);
+            if (String.IsNullOrEmpty(secondNumberInput))
+            {
+                int resultMath = example.Opperation(firstNumber);
+                Console.WriteLine("Result = " + resultMath);
+            }
+            else
+            {
+                int secondNumber = Convert.ToInt32(secondNumberInput);
+                int resultMath = example.Opperation(firstNumber, secondNumber);
+                Console.WriteLine("Result = " + resultMath);
+            }
 
-            Console.WriteLine("Result = " + resultMath);
+            
 
 
 
