@@ -23,6 +23,10 @@ namespace OperatorOverload
             employeeA.SayName();
             employeeB.SayName();
 
+            bool result = employeeA == employeeB;
+
+            Console.WriteLine(result);
+
 
             Console.ReadLine();
         }

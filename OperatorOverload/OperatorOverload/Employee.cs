@@ -9,29 +9,30 @@ namespace OperatorOverload
     public class Employee : Person
     {
         public int ID { get; set; }
-    }
 
-    public static bool operator== (Employee employeeA, Employee employeeB)
-    {
-        if (employeeA.ID == employeeB.ID)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
 
-    public static bool operator !=(Employee employeeA, Employee employeeB)
-    {
-        if (employeeA.ID != employeeB.ID)
+        public static bool operator== (Employee employeeA, Employee employeeB)
         {
-            return false;
+            if (employeeA.ID == employeeB.ID)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-        else
+
+        public static bool operator!= (Employee employeeA, Employee employeeB)
         {
-            return true;
+            if (employeeA.ID != employeeB.ID)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
