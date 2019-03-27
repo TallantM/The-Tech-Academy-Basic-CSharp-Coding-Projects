@@ -11,8 +11,27 @@ namespace OperatorOverload
         public int ID { get; set; }
     }
 
-    public static Employee operator== (Employee employee)
+    public static bool operator== (Employee employeeA, Employee employeeB)
     {
-        
+        if (employeeA.ID == employeeB.ID)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public static bool operator !=(Employee employeeA, Employee employeeB)
+    {
+        if (employeeA.ID != employeeB.ID)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }

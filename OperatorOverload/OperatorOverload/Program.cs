@@ -10,11 +10,20 @@ namespace OperatorOverload
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee();
-            employee.FirstName = "Sample";
-            employee.LastName = "Student";
+            Employee employeeA = new Employee();
+            employeeA.FirstName = "Sample";
+            employeeA.LastName = "Student";
+            employeeA.ID = 1;
 
-            employee.SayName();
+            Employee employeeB = new Employee();
+            employeeB.FirstName = "Sample";
+            employeeB.LastName = "Student";
+            employeeB.ID = 1;
+
+            employeeA.SayName();
+            employeeB.SayName();
+
+
             Console.ReadLine();
         }
     }
