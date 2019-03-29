@@ -11,6 +11,13 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+            // string text = "Here is some text.";
+            // File.WriteAllText(@"C:\Users\Michael J Tallant\Logs\log.txt", text);
+
+            //DateTime yearOfBirth = new DateTime(1992, 12, 7, 0, 0, 1);
+            //DateTime yearOfGraduation = new DateTime(2019, 5, 1, 0, 0, 1);
+            //TimeSpan ageAtGraduation = yearOfGraduation - yearOfBirth;
+
             Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name");
             string playerName = Console.ReadLine();
             Console.WriteLine("How much money did you bring today?");
